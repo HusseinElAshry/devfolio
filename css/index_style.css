@@ -1,0 +1,199 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --maincolor:#0078ff;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.zindex-fixed
+{
+    z-index: 100000;
+} 
+.anchoraf::before
+{
+    content: "";
+    width: 0%;
+    height: 0px;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    border: #fff solid 2px;
+    visibility: hidden;
+    transition: all 1s 0.5s ease-in-out;
+}
+.hoveringli:hover .anchoraf::before
+{
+    visibility: visible;
+    width: 80%;
+}
+.home
+{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.home h1
+{
+    font-size: 75px;
+} 
+.home h1::after
+{
+    content: "";
+    animation: typing 8s ease-in-out 0.5s infinite forwards ;
+    position: absolute;
+    top: 120%;
+    left: 30%;
+    font-size: 48px;
+}
+
+.cvH4::after
+{
+    content: "";
+    width: 15%;
+    height: 0;
+    border: 2px solid var(--maincolor);
+    position: absolute;
+    top: 110%;
+    left: 0;
+}
+
+.ch-btn
+{
+    width: 100px;
+    height: 100px;
+    border-radius:100px;
+    border: var(--maincolor) solid 10px ;
+    margin: auto;
+    padding: 10px;
+}
+.ser-ch:hover .ch-btn
+{
+    border: rgba(255, 255, 255, 0.8) solid 10px;
+    background-color:var(--maincolor);
+    color: #fff;
+}
+
+.serH2
+{
+    font-size:60px;
+}
+.serH2::after
+{
+    content: "";
+    width: 4%;
+    height: 0px;
+    border: var(--maincolor) solid 2px;
+    position: absolute;
+    top: 150%;
+    left: 48%;
+    z-index: 2;
+}
+.bg-counters
+{
+    background: linear-gradient(rgba(0,0,255,0.5) , rgba(0,0,255,0.5)) , url(../img/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.bggrades
+{
+    background:linear-gradient(rgba(0,0,255 , 0.49) , rgba(0,0,255,0.49)) , url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;   
+}
+.scaler:hover img
+{
+    transform: scale(1.3 , 1.3);
+}
+.scaler img
+{
+    transition: all 1s 0.5s ease-in-out;
+}
+.btn-cont
+{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius:100%;
+}
+
+.link-hov:hover h5
+{
+    color: var(--maincolor);
+}
+.formH2::after
+{
+    content: "";
+    width: 6%;
+    height: 0;
+    position: absolute;
+    top: 103%;
+    left: 0;
+    border: var(--maincolor) solid  2px;
+}
+.contactForm button:hover
+{
+    border: rgba(255, 255, 255, 0.5) solid 4px;
+}
+.gintouch button:hover
+{
+    background-color: var(--maincolor);
+    color: #fff;
+}
+.formbg
+{
+    background:linear-gradient(rgba(0,0,255 , 0.49) , rgba(0,0,255,0.49)) , url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+}
+@keyframes typing
+{
+    0%{content: "";}
+    2.5%{content: "De";}
+    5%{content: "Desi";}
+    7.5%{content: "Design";}
+    10%{content: "Designer";}
+    15%{content: "Design";}
+    17.5%{content: "Desi";}
+    20%{content: "De";}
+    22.5%{content: "Dev";}
+    25%{content: "Devel";}
+    27.5%{content: "Develop";}
+    30%{content: "Developer";}
+    35%{content: "Develop";}
+    37.5%{content: "Devel";}
+    40%{content: "Dev";}
+    42.5%{content: "D";}
+    45%{content: "";}
+    47.5%{content: "Fr";}
+    50%{content: "Free";}
+    52.5%{content: "Freela";}
+    55%{content: "Freelanc";}
+    57.5%{content: "Freelancer";}
+    62.5%{content: "Freelanc";}
+    65%{content: "Freela";}
+    67.5%{content: "Free";}
+    70%{content: "Fr";}
+    72.5%{content: "";}
+    75%{content: "Ph";}
+    78.5%{content: "Phot";}
+    80%{content: "Photog";}
+    82.5%{content: "Photogra";}
+    85%{content: "Photograph";}
+    87.5%{content: "Photographer";}
+    90%{content: "Photograph";}
+    92.5%{content: "Photogra";}
+    95%{content: "Photog";}
+    97.5%{content: "Phot";}
+    100%{content: "Ph";}
+}
